@@ -1,0 +1,251 @@
+\documentclass[titlepage, openany]{octavo}
+\usepackage[lmargin=3cm]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{lettrine}
+\usepackage{tgchorus}
+\usepackage[T1]{fontenc}
+\usepackage{niceframe}
+\usepackage{parselines}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\definecolorseries{verso}{rgb}{last}{blue!40!black}{magenta!40!black}
+\resetcolorseries[30]{verso}
+
+\newenvironment{verso}{\pagebreak[3]\begin{parse lines}[\parindent=1em\noindent]{\color{verso!!+}\hspace{\row\parindent}##1\newline\color{black}}}%
+{\end{parse lines}}
+
+\let \oldsec \section
+\renewcommand{\section}[2]{
+    \if \not #2
+    \newpage
+    \fi
+    \oldsec{\dotfill #1}
+}
+
+\title{My \LaTeX{} \emph{poetry}}
+\author{by Fran (that's me)}
+\date{}
+
+\pagestyle{plain}
+\setcounter{secnumdepth}{-1}
+\setcounter{tocdepth}{1}
+
+\begin{document}
+
+\begin{titlepage}
+\begin{center}
+\vfill 
+
+\Huge \fontsize{75}{60}\selectfont
+\artdecoframe{Poems of a land}
+\vfill 
+\large\emph{By just another man ...} 
+\vfill  
+\end{center}
+\end{titlepage}
+
+\curlyframe{\vspace{-8ex}\tableofcontents\vspace{8ex}}
+
+\chapter{The Lunatic}
+\section{and what he did}{}
+
+\large
+\begin{verso}
+    \makebox[.6em][c]{\lettrine{D}{}}id you hear what
+    the lunatic did
+\end{verso}
+
+\begin{verso}
+    He thought and ate the filthy bread
+    He prayed for whose blood was shed
+    And died for the sake of the dead
+\end{verso}
+
+\begin{verso}
+    Did you think about his bet
+    Did you believe the lies he said
+\end{verso}
+
+\begin{verso}
+    Did he do the right thing
+    Did he hold the bright wing
+\end{verso}
+
+\begin{verso}
+    Didn't he lie in the wrong bed
+    Didn't he fly in the wrong ring
+    Didn't he cry for the lost kid
+\end{verso}
+
+\section{and what you did}
+
+\large
+\begin{verso}
+    \makebox[.6em][c]{\lettrine{B}{}}ut are you
+    any better
+\end{verso}
+
+\begin{verso}
+    Didn't you bend for the sinner
+    Didn't you play with the devil
+    Didn't you hurt the only river
+\end{verso}
+
+\begin{verso}
+    Will you do
+    any better
+\end{verso}
+
+\begin{verso}
+    Won't you rest without a letter
+    Won't you resist another getter
+    Won't you cry for the fisher
+\end{verso}
+
+\section{and your salvation}
+
+\large
+\begin{verso}
+    \makebox[.6em][c]{\lettrine{Y}{}} ou shall not get any salvation
+    Because of your intended faultation
+\end{verso}
+
+\begin{verso}
+    And until the death of our nation
+    You will suffer with every sensation
+    Yet won't get their only salutation
+    While waiting for your expiration
+\end{verso}
+
+\begin{verso}
+    You think for the unending duration
+    About what to do for the approbation
+\end{verso}
+
+\begin{verso}
+    Was it ever worth the causation
+    Will they ever forgive your vexation
+\end{verso}
+
+\chapter{Alone}
+\resetcolorseries[30]{verso}
+\section{in every way}{}
+
+\large
+\begin{verso}
+    \makebox[.6em][c]{\lettrine{E}{}}verything is hollow
+    Every thought is shallow
+\end{verso}
+
+\begin{verso}
+    Who should I follow
+    What should I borrow
+\end{verso}
+
+\begin{verso}
+    Could I do this
+    Could I say that
+\end{verso}
+
+\begin{verso}
+    Can I be myself
+    Can I seek yourself
+\end{verso}
+
+\begin{verso}
+    Will you ever help me
+    Will I ever hinder you
+\end{verso}
+
+\section{even at night}
+
+\large
+\begin{verso}
+    \makebox[.6em][c]{\lettrine{W}{}} hat a sleepless night
+    Even the tired will call it a flight
+\end{verso}
+
+\begin{verso}
+    What a sleepless night
+    Even the stars shine without a light
+\end{verso}
+
+\begin{verso}
+    What a sleepless night
+    Even the people sing without a bright
+\end{verso}
+
+\begin{verso}
+    What a sleepless night
+    Even the dead woke from the bed
+\end{verso}
+
+\begin{verso}
+    And still, a sleepless night
+    Did I tell you I saw the dead
+    Did I tell you what I did
+    Did I give you the shiny pet
+\end{verso}
+
+\begin{verso}
+    Yet still, a sleepless night
+    Can you tell me where he hid
+    Can you tell me what he did
+    Can you tell me what's his bet
+\end{verso}
+
+\begin{verso}
+    And still, a sleepless night
+    Can't we just get the list
+    Can't we hope for the best
+    Can't we die without the rest
+\end{verso}
+
+\begin{verso}
+    Yet still, a sleepless night
+    Won't we die without a bye
+    Won't we fly without a tie
+    Won't we cry without a lie
+\end{verso}
+
+\begin{verso}
+    Just one more sleepless night
+\end{verso}
+
+\section{through live}
+
+\begin{verso}
+    \makebox[.6em][c]{\lettrine{F}{}}or what shall I live
+    For what shall I be
+    Can you guess the last flying bee
+    Can you believe the lost tall tree
+\end{verso}
+
+\begin{verso}
+    But what will you do for the only living flee
+\end{verso}
+
+\begin{verso}
+    For what shall I live
+    For what shall I be
+    Does it take you the same of me
+    Does it make you the bumblebee
+\end{verso}
+
+\begin{verso}
+    But what will you do for the great herd of lee
+\end{verso}
+
+\begin{verso}
+    For what shall I live
+    For what shall I be
+    While being a worthless cup of tee
+    While hating every single one of me
+\end{verso}
+
+\begin{verso}
+    I shall not live
+    I shall not be
+\end{verso}
+
+\end{document}
