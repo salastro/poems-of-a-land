@@ -1,0 +1,31 @@
+\documentclass[titlepage, openany]{octavo}
+\usepackage[lmargin=3cm]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{lettrine}
+\usepackage{tgchorus}
+\usepackage[T1]{fontenc}
+\usepackage{niceframe}
+\usepackage{parselines}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\definecolorseries{verso}{rgb}{last}{blue!40!black}{magenta!40!black}
+\resetcolorseries[30]{verso}
+
+\newenvironment{verso}{\pagebreak[3]\begin{parse lines}[\parindent=1em\noindent]{\color{verso!!+}\hspace{\row\parindent}##1\newline\color{black}}}%
+{\end{parse lines}}
+
+\let \oldsec \section
+\renewcommand{\section}[2]{
+    \if \not #2
+        \newpage
+    \fi
+    \oldsec{\dotfill #1}
+}
+
+\title{My \LaTeX{} \emph{poetry}}
+\author{by Fran (that's me)}
+\date{}
+
+\pagestyle{plain}
+\setcounter{secnumdepth}{-1}
+\setcounter{tocdepth}{1}
